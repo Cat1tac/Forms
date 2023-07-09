@@ -52,6 +52,8 @@ input {
     height: 1.8em;
     width: 18em;
     font-size: 1em;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.3)
 }
 
 input:focus:valid {
