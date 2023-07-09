@@ -5,7 +5,6 @@
 body {
     display: flex;
     flex-direction: row;
-    
 }
 
 #image{
@@ -16,12 +15,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 7%;
+    margin-bottom: 7%;
     padding-left: 50px;
 }
 
-form {
-    margin: ;
+h2 {
+    width: 50vw;
 }
 
 #formContainer {
@@ -31,6 +31,7 @@ form {
     padding-bottom: 50px;
     border-bottom: 1px solid rgb(197, 197, 197);
     margin-bottom: 50px;
+    flex-wrap: wrap;
 
 }
 
@@ -44,10 +45,43 @@ form {
 .labels {
     display: flex;
     flex-direction: column;
-
 }
 
 input {
-    height: 1.7em;
-    width: 15em;
+    height: 1.8em;
+    width: 18em;
+    font-size: 1em;
+}
+
+input:focus:valid{
+    border: 2px solid rgb(109, 197, 50);
+    border-radius: 5px;
+}
+
+input:focus:invalid{
+    border: 2px solid rgb(209, 0, 0);
+    border-radius: 5px;
+}
+
+button {
+    background-color: rgb(209, 129, 255);
+    border: none;
+    border-radius: 10px;
+    height: 3em;
+    width: 16em;
+    font-size: large;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-weight: 600;
+}
+
+span {
+    font-style: italic;
 }
