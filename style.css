@@ -7,16 +7,17 @@ body {
     flex-direction: row;
 }
 
-#image{
+#image {
     background-color: black;
+    height: 98vh;
 }
 
 #info {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     padding-left: 50px;
 }
 
@@ -39,27 +40,31 @@ h2 {
 #formbox2 {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 2em;
+    
 }
 
 .labels {
     display: flex;
     flex-direction: column;
-    
+    flex: 1 1 auto;
 }
 
 input {
-    height: 1.8em;
-    width: 18em;
+    min-width: 0;
+    height: 1.7em;
+    width: 25vw;
+    max-width: 20em;
     font-size: 1em;
     border-radius: 5px;
-    border-color: rgba(0, 0, 0, 0.3)
+    border-color: rgba(0, 0, 0, 0.3);
+    display: inline;
 }
 
 input:focus:valid {
     outline-color: rgb(42, 81, 255);
     border-radius: 5px;
-    box-shadow: 0px 0px 10px black;
+    box-shadow: 0px 0px 10px rgb(95, 95, 95);
 }
 
 input:focus:invalid {
@@ -71,11 +76,14 @@ button {
     background-color: rgb(209, 129, 255);
     border: none;
     border-radius: 10px;
-    height: 3em;
-    width: 16em;
+    max-height: 3em;
+    max-width: 16em;
+    width: 20vw;
+    height: 10vh;
     font-size: large;
     font-weight: bolder;
     margin-bottom: 20px;
+    flex-shrink: 1;
 }
 
 a {
